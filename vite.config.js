@@ -5,7 +5,7 @@ const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/gutweb/',
+  base: '/GutWEB/',
   plugins: [vue()],
   resolve: {
     alias: {
