@@ -327,7 +327,7 @@ export default {
 footer{
   width: 100vw;
   background-color: #2a2a2a;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 
