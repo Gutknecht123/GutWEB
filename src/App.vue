@@ -9,11 +9,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-body{
-  
-}
 #main{
-  height: 100vh;
+  color: white;
   background: #1a1a1a;
+  overflow-y: auto;
+  height: 100vh;
 }
+
 </style>

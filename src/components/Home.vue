@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row last">
                 <div class="col">
                     <button class="btn btn-md  btn-dark w-100" @click="showInfo(3)" v-if="show==0 || show==1 || show==2">Zrobswiece.pl</button>
                     <button class="btn btn-md  btn-dark w-100" @click="showInfo(0)" v-if="show==3">Hide info</button>
@@ -275,10 +275,11 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <span>Made by: Gutknecht</span>
-        </footer>
+
     </div>
+    <footer>
+        <div class="footer-text">Made by: Gutknecht</div>
+    </footer>
 </template>
 
 <script>
@@ -306,31 +307,38 @@ export default {
     border-radius: 0px;
 }
 #main{
+    
     max-width: 500px;
     min-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
     font-family: "Roboto Slab";
+    overflow-y: auto;
+  
+    margin-bottom: 10%;
+}
+.footer-text{
+   margin-left: 1%;
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #2a2a2a;
+  width: 100vw;
+  background-color: #2a2a2a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
 }
+
 header{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
+    left: 0;
     width: 100%;
     text-align: center;
     min-height: 100px;
@@ -344,8 +352,9 @@ header{
 
 }
 .wrap .row{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
+
 #title{
     
 }
